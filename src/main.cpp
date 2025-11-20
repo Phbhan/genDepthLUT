@@ -339,8 +339,8 @@ bool createVBOs(){
 
 void checkLUT(std::string filename){
     cv::Mat meshgridLUT = cv::imread(filename, cv::IMREAD_COLOR); 
-    cv::Mat img = cv::imread("/home/hanpb2/Downloads/img0.png", cv::IMREAD_COLOR); 
-    cv::Mat roi = cv::imread("/home/hanpb2/VSProjects/svm_sdk/roi_mask_cam/roi_mask_0.png", cv::IMREAD_COLOR); 
+    cv::Mat img = cv::imread("data/img0.png", cv::IMREAD_COLOR); 
+    cv::Mat roi = cv::imread("data/roi_mask_cam/roi_mask_0.png", cv::IMREAD_COLOR); 
     cv::resize(img, img, cv::Size(512, 320));
     cv::resize(roi, roi, cv::Size(512, 320));
 

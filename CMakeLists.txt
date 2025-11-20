@@ -48,3 +48,10 @@ add_executable(genTopLut ${sources})
 target_link_libraries(genTopLut
   ${catkin_LIBRARIES} ${OpenCV_LIBS} ${LIBS} stdc++fs EGL GLESv2 ${PNG_LIBRARY}
 )
+
+add_custom_command(TARGET genTopLut POST_BUILD
+    COMMAND ${CMAKE_COMMAND} -E copy_directory
+            ${CMAKE_SOURCE_DIR}/data
+            $<TARGET_FILE_DIR:genTopLut>/data
+    COMMENT "Copying data/ folder to build directory"
+)

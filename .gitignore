@@ -1,1 +1,4 @@
 includes/*
+build/*
+!build/output.png
+!build/projected.png
