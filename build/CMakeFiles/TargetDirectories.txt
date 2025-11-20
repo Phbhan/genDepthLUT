@@ -1,3 +1,0 @@
-/home/hanpb2/VSProjects/genDepthLUT/build/CMakeFiles/genTopLut.dir
-/home/hanpb2/VSProjects/genDepthLUT/build/CMakeFiles/edit_cache.dir
-/home/hanpb2/VSProjects/genDepthLUT/build/CMakeFiles/rebuild_cache.dir
